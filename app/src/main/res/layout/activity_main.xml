@@ -9,106 +9,39 @@
     android:layout_height="917dp"
     android:background="@drawable/container_android_compact">
 
-    <FrameLayout
-        android:id="@+id/container_group"
-        android:layout_width="315dp"
-        android:layout_height="52dp"
-        android:layout_marginRight="48dp"
+    <!-- Kontainer tombol Google Login -->
+    <LinearLayout
+        android:id="@+id/container_google_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="768dp"
-        android:layout_gravity="top|right">
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-        <ImageView
-            android:id="@+id/image_rectangle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginRight="108dp"
-            android:background="@drawable/image_rectangle"
-            android:scaleType="centerCrop" />
-
-        <ImageView
-            android:id="@+id/image_rectangle1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="108dp"
-            android:layout_marginRight="108dp"
-            android:background="@drawable/image_rectangle1"
-            android:scaleType="centerCrop" />
-
-        <ImageView
-            android:id="@+id/image_rectangle2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="108dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/image_rectangle2" />
-
-        <ImageView
-            android:id="@+id/image_social_media_x"
-            android:layout_width="25dp"
-            android:layout_height="23dp"
-            android:layout_marginLeft="252dp"
-            android:layout_marginRight="38dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="14dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/image_social_media_x" />
-
-        <ImageView
-            android:id="@+id/image_social_media_x1"
-            android:layout_width="25dp"
-            android:layout_height="23dp"
-            android:layout_marginLeft="253dp"
-            android:layout_marginRight="37dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="14dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/image_social_media_x1" />
-
-        <ImageView
-            android:id="@+id/image_facebook_logo"
-            android:layout_width="49dp"
-            android:layout_height="49dp"
-            android:layout_marginLeft="132dp"
-            android:layout_marginRight="1dp"
-            android:layout_marginTop="1dp"
-            android:layout_gravity="top"
-            android:scaleType="centerInside"
-            android:src="@drawable/image_facebook_logo" />
-
-        <ImageView
-            android:id="@+id/image_facebook_logo1"
-            android:layout_width="49dp"
-            android:layout_height="49dp"
-            android:layout_marginLeft="133dp"
-            android:layout_marginRight="133dp"
-            android:layout_marginTop="1dp"
-            android:layout_gravity="top"
-            android:scaleType="centerInside"
-            android:src="@drawable/image_facebook_logo1" />
-
+        <!-- Logo Google -->
         <ImageView
             android:id="@+id/image_google_logo"
             android:layout_width="26dp"
             android:layout_height="26dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginBottom="13dp"
-            android:layout_gravity="left"
+            android:layout_marginRight="8dp"
             android:scaleType="centerInside"
             android:src="@drawable/image_google_logo" />
 
-        <ImageView
-            android:id="@+id/image_google_logo1"
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginBottom="13dp"
-            android:layout_gravity="left"
-            android:scaleType="centerInside"
-            android:src="@drawable/image_google_logo1" />
-    </FrameLayout>
+        <!-- Tulisan Login dengan akun Google -->
+        <TextView
+            android:id="@+id/text_google_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Login dengan akun Google"
+            android:textColor="#FF000000"
+            android:textSize="13sp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
 
+    <!-- EditText untuk email -->
     <EditText
         android:id="@+id/edit_email"
         android:layout_width="315dp"
@@ -123,6 +56,7 @@
         android:textColor="#FF000000"
         android:textSize="13dp" />
 
+    <!-- EditText untuk password -->
     <EditText
         android:id="@+id/edit_password"
         android:layout_width="315dp"
@@ -137,7 +71,7 @@
         android:textColor="#FF000000"
         android:textSize="13dp" />
 
-
+    <!-- Background untuk tombol login -->
     <ImageView
         android:id="@+id/image_rectangle5"
         android:layout_width="315dp"
@@ -148,6 +82,7 @@
         android:background="@drawable/image_rectangle5"
         android:scaleType="centerInside" />
 
+    <!-- TextView untuk judul halaman login -->
     <TextView
         android:id="@+id/text_login_account"
         android:layout_width="wrap_content"
@@ -164,8 +99,7 @@
         android:textColor="#FF000000"
         android:textSize="20dp" />
 
-
-
+    <!-- TextView untuk bagian 'Or sign up' -->
     <TextView
         android:id="@+id/text_or_sign_up"
         android:layout_width="wrap_content"
@@ -181,6 +115,7 @@
         android:textColor="#FF000000"
         android:textSize="13dp" />
 
+    <!-- TextView untuk prompt sign up -->
     <TextView
         android:id="@+id/text_sign_up_prompt"
         android:layout_width="wrap_content"
@@ -197,6 +132,7 @@
         android:textColor="#FF000000"
         android:textSize="13dp" />
 
+    <!-- TextView untuk tombol sign in -->
     <TextView
         android:id="@+id/text_sign_in"
         android:layout_width="wrap_content"
@@ -212,6 +148,7 @@
         android:textColor="#FFFFFFFF"
         android:textSize="13dp" />
 
+    <!-- TextView untuk logo -->
     <TextView
         android:id="@+id/text_logo"
         android:layout_width="wrap_content"
@@ -227,14 +164,4 @@
         android:text="Logo"
         android:textColor="#FF000000"
         android:textSize="13dp" />
-
-    <ImageView
-        android:id="@+id/image_facebook_logo2"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:layout_marginLeft="0.5dp"
-        android:layout_marginTop="769dp"
-        android:layout_gravity="top|center_horizontal"
-        android:scaleType="centerInside"
-        android:src="@drawable/image_facebook_logo2" />
 </FrameLayout>

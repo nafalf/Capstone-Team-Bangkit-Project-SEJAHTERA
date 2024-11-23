@@ -1,12 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-buildscript{
+buildscript {
+    repositories {
+        google()
+        mavenCentral() // Pastikan baris ini ada
+        maven("https://jitpack.io") // Jika menggunakan pustaka dari JitPack
+    }
     dependencies {
         classpath("com.google.gms:google-services:4.4.2")
     }
 }
-
-
 
 plugins {
     alias(libs.plugins.android.application) apply false

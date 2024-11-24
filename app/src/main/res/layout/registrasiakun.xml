@@ -42,7 +42,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="447dp"
         android:layout_gravity="top|center_horizontal"
-        android:background="@drawable/container_rectangle1"
+        android:background="@drawable/container_rectangle"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="10dp"
@@ -54,7 +54,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="517dp"
         android:layout_gravity="top|center_horizontal"
-        android:background="@drawable/container_rectangle2"
+        android:background="@drawable/container_rectangle"
         android:hint="Confirm Password"
         android:inputType="textPassword"
         android:padding="10dp"
@@ -64,12 +64,12 @@
         android:id="@+id/button_sign_up"
         android:layout_width="315dp"
         android:layout_height="52dp"
-        android:layout_marginTop="605dp"
+        android:layout_marginTop="587dp"
         android:layout_gravity="top|center_horizontal"
-        android:background="@drawable/container_rectangle3"
+        android:backgroundTint="#6A9C89"
         android:text="Sign Up"
         android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -93,21 +93,14 @@
         android:textColor="#FF000000"
         android:textSize="13dp" />
 
-    <TextView
-        android:id="@+id/text_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:layout_marginLeft="0.5dp"
-        android:layout_marginTop="141.5dp"
-        android:layout_marginBottom="-0.5dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="left|center_vertical"
-        android:includeFontPadding="false"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:text="Logo"
-        android:textColor="#FF000000"
-        android:textSize="13dp" />
+    <!-- TextView untuk logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="278dp"
+        android:layout_height="213dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
 
     <ImageView
         android:id="@+id/container_rectangle4"

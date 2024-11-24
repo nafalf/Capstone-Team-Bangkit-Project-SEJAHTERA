@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val emailEditText: EditText = findViewById(R.id.edit_email)
         val passwordEditText: EditText = findViewById(R.id.edit_password)
 
-        val signInTextView: TextView = findViewById(R.id.text_sign_in)
+        val signInTextView: TextView = findViewById(R.id.button_sign_in)
         signInTextView.setOnClickListener {
             val email = emailEditText.text.toString().trim()
             val password = passwordEditText.text.toString().trim()

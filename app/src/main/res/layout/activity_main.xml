@@ -51,36 +51,43 @@
         android:layout_gravity="top|center_horizontal"
         android:hint="Enter your email"
         android:inputType="textEmailAddress"
-        android:background="@drawable/image_rectangle3"
+        android:background="@drawable/container_rectangle"
         android:padding="10dp"
         android:textColor="#FF000000"
         android:textSize="13dp" />
 
     <!-- EditText untuk password -->
+
+    <!-- Background untuk tombol login -->
     <EditText
         android:id="@+id/edit_password"
         android:layout_width="315dp"
         android:layout_height="52dp"
+        android:layout_gravity="top|center_horizontal"
         android:layout_marginLeft="0.5dp"
         android:layout_marginTop="447dp"
-        android:layout_gravity="top|center_horizontal"
+        android:background="@drawable/container_rectangle"
         android:hint="Enter your password"
         android:inputType="textPassword"
-        android:background="@drawable/image_rectangle4"
         android:padding="10dp"
         android:textColor="#FF000000"
         android:textSize="13dp" />
 
-    <!-- Background untuk tombol login -->
-    <ImageView
-        android:id="@+id/image_rectangle5"
+    <Button
+        android:id="@+id/button_sign_in"
         android:layout_width="315dp"
         android:layout_height="52dp"
-        android:layout_marginLeft="0.5dp"
-        android:layout_marginTop="535dp"
+        android:layout_marginTop="517dp"
         android:layout_gravity="top|center_horizontal"
-        android:background="@drawable/image_rectangle5"
-        android:scaleType="centerInside" />
+        android:backgroundTint="#6A9C89"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+
 
     <!-- TextView untuk judul halaman login -->
     <TextView
@@ -132,36 +139,14 @@
         android:textColor="#FF000000"
         android:textSize="13dp" />
 
-    <!-- TextView untuk tombol sign in -->
-    <TextView
-        android:id="@+id/text_sign_in"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:layout_marginTop="552.5dp"
-        android:layout_marginBottom="-0.5dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="left|center_vertical"
-        android:includeFontPadding="false"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:text="Sign in"
-        android:textColor="#FFFFFFFF"
-        android:textSize="13dp" />
+
 
     <!-- TextView untuk logo -->
-    <TextView
-        android:id="@+id/text_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:layout_marginLeft="0.5dp"
-        android:layout_marginTop="141.5dp"
-        android:layout_marginBottom="-0.5dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="left|center_vertical"
-        android:includeFontPadding="false"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:text="Logo"
-        android:textColor="#FF000000"
-        android:textSize="13dp" />
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="278dp"
+        android:layout_height="213dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
 </FrameLayout>

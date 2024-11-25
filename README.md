@@ -1,1 +1,10 @@
 Capstone Team Bangkit Project SEJAHTERA: "Sistem Ekonomi Jangka Panjang Terencana dan Terarah"
+
+Member of Capstone:
+A444B4KY0225
+A009B4KY2643
+C179B4KY2525
+C179B4KY4535
+M297B4KX1982
+M297B4KY2960
+M297B4KX4278
